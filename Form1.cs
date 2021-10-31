@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Diagnostics;
 
 namespace Game
 {
@@ -23,7 +24,7 @@ namespace Game
         {
             Random rndObject = new Random();
             SoughteredNumber = rndObject.Next(1, 100);
-            Console.WriteLine(SoughteredNumber);
+            Debug.WriteLine(SoughteredNumber);
 
 
             InitializeComponent();
@@ -70,7 +71,7 @@ namespace Game
         {
             Random rndObject = new Random();
             SoughteredNumber = rndObject.Next(1, 100);
-            Console.WriteLine(SoughteredNumber);
+            Debug.WriteLine(SoughteredNumber);
             Lives = DEFAULT_LIVES_COUNT;
             Wins = 0;
             ConditionInit();
@@ -142,7 +143,7 @@ namespace Game
 
                 Random rndObject = new Random();
                 SoughteredNumber = rndObject.Next(1, 100);
-                Console.WriteLine(SoughteredNumber);
+                Debug.WriteLine(SoughteredNumber);
             }
             LivesNumInit();
             WinsNumInit();
